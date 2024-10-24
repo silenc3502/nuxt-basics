@@ -1,8 +1,8 @@
 <template>
     <v-app>
+        <navigation-menu-bar/>
         <v-main>
             <NuxtPage/>
-<!--            <NuxtLink to="/">Home</NuxtLink>-->
         </v-main>
     </v-app>
 </template>

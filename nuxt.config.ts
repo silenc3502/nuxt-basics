@@ -30,6 +30,13 @@ export default defineNuxtConfig({
     dirs: ['./stores']
   },
 
+  components: {
+    dirs: [
+      '~/components', // 기본 경로
+      '~/navigationBar',
+    ]
+  },
+
   runtimeConfig: {
     public: {
       MAIN_API_URL: process.env.MAIN_API_URL,

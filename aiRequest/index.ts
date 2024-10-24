@@ -3,8 +3,8 @@ import { resolve } from 'path';
 
 export default defineNuxtModule({
     meta: {
-        name: 'board',
-        configKey: 'board',
+        name: 'ai-request',
+        configKey: 'ai-request',
     },
 
     setup(moduleOptions, nuxt) {
@@ -12,9 +12,9 @@ export default defineNuxtModule({
 
         nuxt.hook('pages:extend', (pages) => {
             pages.push({
-                name: 'board-list',
-                path: '/board/list',
-                file: resolve(themeDir, 'board/pages/list.vue'),
+                name: 'ai-request',
+                path: '/ai-request/send',
+                file: resolve(themeDir, 'aiRequest/pages/send.vue'),
             });
         });
 

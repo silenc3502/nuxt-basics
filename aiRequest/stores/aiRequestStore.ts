@@ -1,13 +1,13 @@
 import { defineStore } from 'pinia';
-import axiosInstance, {createAxiosInstances} from "../utility/axiosInstance";
+import axiosInstance, {createAxiosInstances} from "../../utility/axiosInstance";
 
-export const useBoardStore = defineStore('boardStore', {
+export const useAiRequestStore = defineStore('AiRequestStore', {
     state: () => ({
         boards: [] as Array<{ boardId: number; title: string; writer: string; regDate: string }>,
     }),
 
     actions: {
-        async requestBoardListToDjango() {
+        async requestAiRequestToDjango() {
             const { djangoAxiosInst } = createAxiosInstances();
 
             try {
